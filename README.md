@@ -36,3 +36,4 @@ Texcan은 사용자의 PDF 파일이나 텍스트 데이터를 **외부 서버�
 ## 📞 고객지원
 - **웹사이트:** [https://jappscompany.github.io/texcan](https://jappscompany.github.io/texcan)  
 - **이메일:** [jappscompany@gmail.com](mailto:jappscompany@gmail.com)
+- **후원금계좌:** SC은행(SCBank) 170-2010-9926 
