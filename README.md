@@ -14,7 +14,7 @@
 Texcan은 사용자의 PDF 파일이나 텍스트 데이터를 **외부 서버로 전송하지 않습니다.**  
 모든 데이터는 사용자의 iOS 기기에만 저장됩니다.  
 
-- [Privacy Policy](https://jappscompany.github.io/PrivacyPolicy.html)
+- [Privacy Policy](https://jappscompany.github.io/privacy.html)
 
 ---
 
