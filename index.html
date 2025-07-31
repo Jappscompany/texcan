@@ -9,22 +9,58 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background: linear-gradient(to bottom, #f0f4f8, #ffffff);
             color: #333;
             line-height: 1.6;
         }
         header {
-            background-color: #2c3e50;
+            background: url('images/office-bg.jpg') no-repeat center/cover;
             color: white;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(44, 62, 80, 0.7);
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
         }
         main {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
@@ -52,7 +88,7 @@
         .screenshot-container img:hover {
             transform: scale(1.05);
         }
-        .privacy-button {
+        .privacy-button, .profile-button {
             display: inline-block;
             padding: 10px 20px;
             background-color: #3498db;
@@ -60,6 +96,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-top: 10px;
         }
         footer {
             text-align: center;
@@ -75,12 +112,21 @@
         <h1>Texcan</h1>
         <p>스캔된 PDF에서 원하는 정보를 더 빠르고, 더 정확하게</p>
     </header>
+
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="profile.html">직원 소개</a>
+        <a href="privacy.html">개인정보 처리방침</a>
+    </nav>
+
     <main>
         <section>
             <h2>앱 소개</h2>
             <p>
                 Texcan은 스캔된 PDF 문서를 AI 기반 OCR 기술로 빠르게 텍스트로 변환하고,
-                강력한 검색 기능으로 필요한 내용을 쉽게 찾아볼 수 있는 스마트 PDF 도구입니다.
+                강력한 검색 기능으로 필요한 내용을 쉽게 찾아볼 수 있는 스마트 PDF 도구입니다.<br>
+                <strong>제이앱스</strong>는 혁신적인 모바일 솔루션을 제공하며, 
+                업무 효율성을 극대화하는 AI 앱을 만듭니다.
             </p>
         </section>
         <section>
@@ -105,12 +151,14 @@
             </div>
         </section>
         <section>
-            <h2>개인정보 처리방침</h2>
+            <h2>더 알아보기</h2>
             <a href="privacy.html" class="privacy-button">Privacy Policy 보기</a>
+            <a href="profile.html" class="profile-button">직원 프로필 보기</a>
         </section>
     </main>
+
     <footer>
-        &copy; 2025 Texcan. All rights reserved.
+        &copy; 2025 제이앱스 Texcan. All rights reserved.
     </footer>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직원 소개</title>
+    <style>
+        body {
+            font-family: "Apple SD Gothic Neo", sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        .profile-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        .profile-card h2 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #222;
+        }
+        .role {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>👩‍💼 우리 회사 팀원 소개</h1>
+
+    <div class="team-container">
+        <!-- 큐큐부장 -->
+        <div class="profile-card">
+            <img src="images/큐큐부장프로필.png" alt="큐큐부장">
+            <h2>큐큐부장</h2>
+            <div class="role">문서 요약 전문가</div>
+            <div class="description">
+                천재적인 요약 실력을 가진 귀여운 부장님.<br>
+                어떤 문서도 빠르고 정확하게 정리해 줍니다.
+            </div>
+        </div>
+
+        <!-- 파이사 대리 -->
+        <div class="profile-card">
+            <img src="images/파이사대리프로필.png" alt="파이사대리">
+            <h2>파이사 대리</h2>
+            <div class="role">한글 번역 담당</div>
+            <div class="description">
+                젊고 세련된 스타일의 번역 전문가.<br>
+                자연스럽고 품질 높은 한국어 번역을 제공합니다.
+            </div>
+        </div>
+
+        <!-- 그라나 인턴 -->
+        <div class="profile-card">
+            <img src="images/그라나인턴프로필.png" alt="그라나인턴">
+            <h2>그라나 인턴</h2>
+            <div class="role">슈퍼 멀티태스커</div>
+            <div class="description">
+                가장 어린 인턴이지만 놀라운 속도로<br>
+                업무를 척척 해내는 만능 해결사입니다.
+            </div>
+            <div class="description"></div>
+                하지만 업무 성과는 글쎄요..<br>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
